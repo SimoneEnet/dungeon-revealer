@@ -4,5 +4,12 @@ block content
     include splash.jade
     #map-container
 
+    #map-wrapper
+    #player-toolbar.toolbar-wrapper
+        .btn-toolbar
+            .btn-group
+                a#btn-zoom-in.btn.btn-default Zoom In
+                a#btn-zoom-out.btn.btn-default Zoom Out
+
 block js
     script(data-main='/javascripts/player-app.js', src='/javascripts/require.js')
